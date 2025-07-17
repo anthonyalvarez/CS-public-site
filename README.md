@@ -1,0 +1,2 @@
+# public-site
+static site

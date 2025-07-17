@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE playlist SYSTEM "http://www.webminster.de/ext/xml/webplayer/playlist.dtd">
+<playlist name="" basedir="" xmlns="http://www.webminster.de/ext/xml/webplayer">
+    <file src="sound1.mp3" />
+    <file src="sound2.mp3" />
+    <file src="sound3.mp3" />
+    <file src="sound4.mp3" />
+    <file src="sound5.mp3" />
+    <file src="sound6.mp3" />
+</playlist>

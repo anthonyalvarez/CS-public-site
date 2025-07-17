@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Jaris FLV Player</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="en" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<script src="js/swfobject.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var flashvarsVideo = {
+			source: "http://pucho.com/jarvis/Video_130310_224405_0.flv",
+			type: "video",
+			streamtype: "file",
+			server: "",//Used for rtmp streams
+			duration: "52",
+			poster: "http://jaris.sourceforge.net/images/poster.png",
+			autostart: "false",
+			logo: "http://jaris.sourceforge.net/images/logo.png",
+			logoposition: "top left",
+			logoalpha: "30",
+			logowidth: "130",
+			logolink: "http://jaris.sourceforge.net",
+			hardwarescaling: "false",
+			darkcolor: "000000",
+			brightcolor: "4c4c4c",
+			controlcolor: "FFFFFF",
+			hovercolor: "67A8C1"
+		};
+		var flashvarsAudio = {
+			source: "http://cynthiasam.us/demo/Cynthia_Sam_Kid-Char-Comm.mp3",
+			type: "audio",
+			streamtype: "file",
+			server: "",//Used for rtmp streams
+			duration: "00:01:06",
+			poster: "http://cynthiasam.us/images/logo.gif",
+			autostart: "true",
+			logo: "http://jaris.sourceforge.net/images/logo.png",
+			logoposition: "top left",
+			logoalpha: "30",
+			logowidth: "130",
+			logolink: "http://cynthiasam.us",
+			hardwarescaling: "false",
+			darkcolor: "D3D3D3",
+			brightcolor: "FFFFFF",
+			controlcolor: "000000",
+			hovercolor: "FF0000"
+		};
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "#000000",
+			quality: "high",
+			wmode: "opaque"
+		};
+		var attributes = {
+			id:"JarisFLVPlayer"
+		};
+		swfobject.embedSWF("JarisFLVPlayer.swf", "altContentOne", "341px", "329px", "10.0.0", "expressInstall.swf", flashvarsVideo, params, attributes);
+		swfobject.embedSWF("JarisFLVPlayer.swf", "altContentTwo", "341px", "329px", "10.0.0", "expressInstall.swf", flashvarsAudio, params, attributes);
+	</script>
+	<style>
+		html, body { height:100%; }
+		body { margin:0; }
+	</style>
+</head>
+<body>
+<br />
+	<center>
+	<div id="altContentTwo">
+		<h1>Jaris FLV Player</h1>
+		<p>Alternative content</p>
+		<p><a href="http://www.adobe.com/go/getflashplayer"><img 
+			src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" 
+			alt="Get Adobe Flash player" /></a></p>
+	</div>
+	</center>
+</body>
+</html>
